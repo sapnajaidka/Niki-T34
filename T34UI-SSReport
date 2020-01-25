@@ -1,0 +1,635 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/sj113/Desktop/FINAL MODELS/PIMT34New.cpn
+Report generated: Thu Jan 17 10:16:15 2019
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  19
+     Arcs:   53
+     Secs:   0
+     Status: Full
+
+  Scc Graph
+     Nodes:  2
+     Arcs:   2
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     BatteryLevel'BatteryLevel 1
+                             1          0
+     BatteryLevel'Info 1     1          0
+     BatteryLevel'Init 1     1          0
+     BatteryStatus'BatteryStatus 1
+                             1          0
+     BatteryStatus'Infusing 1
+                             1          0
+     BatteryStatus'Paused 1  1          0
+     ChangeSetUp'ChangeSetUp 1
+                             1          0
+     ChangeSetUp'Info 1      1          0
+     ChangeSetUp'Init 1      1          0
+     ConfirmSettings'ConfirmSettings 1
+                             1          0
+     ConfirmSettings'Info 1  1          0
+     ConfirmSettings'Init 1  1          0
+     ConfirmSettings'RateConfirm 1
+                             1          0
+     ConfirmSettings'StartInfusingConfirm 1
+                             1          0
+     EventLog'EventLog 1     1          0
+     EventLog'Info 1         1          0
+     EventLog'Init 1         1          0
+     Info'BatteryLevel 1     1          0
+     Info'ChangeSetUp 1      1          0
+     Info'EventLog 1         1          0
+     Info'Info 1             1          0
+     Info'Init 1             1          0
+     Info'RateSet 1          1          0
+     Infusing'Infusing 1     1          0
+     Infusing'InfusionStatus 1
+                             1          0
+     Infusing'Paused 1       1          0
+     InfusionStatus'BatteryStatus 1
+                             1          0
+     InfusionStatus'Infusing 1
+                             1          0
+     InfusionStatus'InfusionStatus 1
+                             1          0
+     InfusionStatus'Paused 1 1          0
+     Init'Info 1             1          0
+     Init'Init 1             1          0
+     Init'SetVolume 1        1          0
+     Init'TimeOut 1          1          0
+     Init2'Info 1            1          0
+     Init2'Init2 1           1          0
+     Init2'Resume 1          1          0
+     LoadSyringe'Info 1      1          0
+     LoadSyringe'Init 1      1          0
+     LoadSyringe'LoadSyringe 1
+                             1          0
+     Paused'Info 1           1          0
+     Paused'Infusing 1       1          0
+     Paused'Init2 1          1          0
+     Paused'Paused 1         1          0
+     RateConfirm'ConfirmSettings 1
+                             1          0
+     RateConfirm'Info 1      1          0
+     RateConfirm'Init 1      1          0
+     RateConfirm'RateConfirm 1
+                             1          0
+     RateConfirm'SetDuration 1
+                             1          0
+     RateSet'Info 1          1          0
+     RateSet'Init 1          1          0
+     RateSet'RateSet 1       1          0
+     Resume'Infusing 1       1          0
+     Resume'Resume 1         1          0
+     Resume'SetVolume 1      1          0
+     SetDuration'Info 1      1          0
+     SetDuration'Init 1      1          0
+     SetDuration'RateConfirm 1
+                             1          0
+     SetDuration'SetDuration 1
+                             1          0
+     SetDuration'SetVolume 1 1          0
+     SetVolume'Info 1        1          0
+     SetVolume'Init 1        1          0
+     SetVolume'SetDuration 1 1          0
+     SetVolume'SetVolume 1   1          0
+     StartInfusingConfirm'ConfirmSettings 1
+                             1          0
+     StartInfusingConfirm'Info 1
+                             1          0
+     StartInfusingConfirm'Infusing 1
+                             1          0
+     StartInfusingConfirm'Init 1
+                             1          0
+     StartInfusingConfirm'StartInfusingConfirm 1
+                             1          0
+     TimeOut'Info 1          1          0
+     TimeOut'Init 1          1          0
+     TimeOut'TimeOut 1       1          0
+
+
+ Best Upper Multi-set Bounds
+    	
+
+ BatteryLevel'BatteryLevel 1
+                         1`[(Display,MValResponder,[S_BatteryLevel]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Info]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+BatteryLevel'Info 1 
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+     
+BatteryLevel'Init 1 
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+BatteryStatus'BatteryStatus 1
+                         1`[(Display,MValResponder,[S_BatteryLevel]),(InfoSK,ActionControl,[I_Infusing]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_PauseInfusion,I_Pause]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[S_TimeOut,I_Infusing])]
+ 
+BatteryStatus'Infusing 1
+                         1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+BatteryStatus'Paused 1
+                         1`[(Display,MValResponder,[S_PumpStoppedWarning]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[S_ResumeInfusing,I_Infusing]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+ 
+ChangeSetUp'ChangeSetUp 1
+                         1`[(Display,MValResponder,[S_SelectDigit,S_IncorrectCode]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_SelectDigit]),(DownMinusSK,ActionControl,[S_SelectDigit]),(YesStartSK,ActionControl,[S_SetUpCodeAccept,S_IncorrectCode]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+ChangeSetUp'Info 1  
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+ChangeSetUp'Init 1  
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+ 
+ConfirmSettings'ConfirmSettings 1
+                         1`[(Display,MValResponder,[S_CurrentVTBI,S_CurrentDuration,S_CurrentRate,S_ConfirmMsg]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_StartInfusingConfirm]),(NoStopSK,ActionControl,[I_RateConfirm]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+ConfirmSettings'Info 1
+                         1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+ConfirmSettings'Init 1
+                         1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+ConfirmSettings'RateConfirm 1
+                         1`[(Display,MValResponder,[S_CurrentRate]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_ConfirmSettings,S_SaveSettings]),(NoStopSK,ActionControl,[I_SetDuration]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+ConfirmSettings'StartInfusingConfirm 1
+                         1`[(Display,MValResponder,[S_StartInfusingMsg]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Infusing,S_Infusing]),(NoStopSK,ActionControl,[I_ConfirmSettings]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+EventLog'EventLog 1 
+
+1`[(Display,MValResponder,[S_EventLogData,S_EventInfoDisplay]),(InfoSK,ActionControl,[I_EventInfo]),(UpPlusSK,ActionControl,[S_NextEvent]),(DownMinusSK,ActionControl,[S_PrevEvent]),(YesStartSK,ActionControl,[I_Info]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+EventLog'Info 1     
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+EventLog'Init 1     
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+Info'BatteryLevel 1 
+
+1`[(Display,MValResponder,[S_BatteryLevel]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Info]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Info'ChangeSetUp 1  
+
+1`[(Display,MValResponder,[S_SelectDigit,S_IncorrectCode]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_SelectDigit]),(DownMinusSK,ActionControl,[S_SelectDigit]),(YesStartSK,ActionControl,[S_SetUpCodeAccept,S_IncorrectCode]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+
+
+Info'EventLog 1     
+
+1`[(Display,MValResponder,[S_EventLogData,S_EventInfoDisplay]),(InfoSK,ActionControl,[I_EventInfo]),(UpPlusSK,ActionControl,[S_NextEvent]),(DownMinusSK,ActionControl,[S_PrevEvent]),(YesStartSK,ActionControl,[I_Info]),(NoStopSK,ActionControl,[I_Info]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Info'Info 1         
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Info'Init 1         
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+Info'RateSet 1      
+
+1`[(Display,MValResponder,[S_SelectDigit,S_IncorrectCode]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_SelectDigit]),(DownMinusSK,ActionControl,[S_SelectDigit]),(YesStartSK,ActionControl,[S_RateCodeAccept,S_IncorrectCode]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Infusing'Infusing 1 
+
+1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+Infusing'InfusionStatus 1
+                         1`[(Display,MValResponder,[S_SyringeStatusDisplay]),(InfoSK,ActionControl,[I_BatteryLevel]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Pause]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[S_TimeOut,I_Infusing])]
+
+Infusing'Paused 1   
+
+1`[(Display,MValResponder,[S_PumpStoppedWarning]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[S_ResumeInfusing,I_Infusing]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+InfusionStatus'BatteryStatus 1
+                         1`[(Display,MValResponder,[S_BatteryLevel]),(InfoSK,ActionControl,[I_Infusing]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_PauseInfusion,I_Pause]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[S_TimeOut,I_Infusing])]
+ 
+InfusionStatus'Infusing 1
+                         1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+InfusionStatus'InfusionStatus 1
+                         1`[(Display,MValResponder,[S_SyringeStatusDisplay]),(InfoSK,ActionControl,[I_BatteryLevel]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Pause]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[S_TimeOut,I_Infusing])]
+
+InfusionStatus'Paused 1
+                         1`[(Display,MValResponder,[S_PumpStoppedWarning]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[S_ResumeInfusing,I_Infusing]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Init'Info 1         
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Init'Init 1         
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+Init'SetVolume 1    
+
+1`[(Display,MValResponder,[S_CurrentVolume,S_CurrentSyringe]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseVTBI]),(DownMinusSK,ActionControl,[S_DecreaseVTBI]),(YesStartSK,ActionControl,[S_SetVTBI,I_SetDuration]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[I_Init,Quit]),(Timeout,System,[])]
+ 
+Init'TimeOut 1      
+
+1`[(Display,MValResponder,[S_TimeOut]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Init]),(NoStopSK,ActionControl,[S_StopAlarm]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+Init2'Info 1        
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Init2'Init2 1       
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Resume]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[])]
+
+Init2'Resume 1      
+
+1`[(Display,MValResponder,[S_ResumeConfirm]),(InfoSK,ActionControl,[]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Infusing]),(NoStopSK,ActionControl,[I_SetVolume]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[])]
+
+LoadSyringe'Info 1  
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+LoadSyringe'Init 1  
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+ 
+
+
+LoadSyringe'LoadSyringe 1
+                         1`[(Display,MValResponder,[S_SyringeWarnings]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[S_MoveActuatorFwd,S_ArmWarning]),(RightBackSK,ActionControl,[S_MoveActuatorBwd,S_ArmWarning]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_Init])]
+
+Paused'Info 1       
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+Paused'Infusing 1   
+
+1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+Paused'Init2 1      
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Resume]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[])]
+
+Paused'Paused 1     
+
+1`[(Display,MValResponder,[S_PumpStoppedWarning]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[S_ResumeInfusing,I_Infusing]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateConfirm'ConfirmSettings 1
+                         1`[(Display,MValResponder,[S_CurrentVTBI,S_CurrentDuration,S_CurrentRate,S_ConfirmMsg]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_StartInfusingConfirm]),(NoStopSK,ActionControl,[I_RateConfirm]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateConfirm'Info 1  
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateConfirm'Init 1  
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+RateConfirm'RateConfirm 1
+                         1`[(Display,MValResponder,[S_CurrentRate]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_ConfirmSettings,S_SaveSettings]),(NoStopSK,ActionControl,[I_SetDuration]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateConfirm'SetDuration 1
+                         1`[(Display,MValResponder,[S_CurrentDuration]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseDuration]),(DownMinusSK,ActionControl,[S_DecreaseDuration]),(YesStartSK,ActionControl,[S_SetNewDuration,I_RateConfirm]),(NoStopSK,ActionControl,[I_SetVolume]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateSet'Info 1      
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+RateSet'Init 1      
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+RateSet'RateSet 1   
+
+1`[(Display,MValResponder,[S_SelectDigit,S_IncorrectCode]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_SelectDigit]),(DownMinusSK,ActionControl,[S_SelectDigit]),(YesStartSK,ActionControl,[S_RateCodeAccept,S_IncorrectCode]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+
+
+Resume'Infusing 1   
+
+1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+Resume'Resume 1     
+
+1`[(Display,MValResponder,[S_ResumeConfirm]),(InfoSK,ActionControl,[]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Infusing]),(NoStopSK,ActionControl,[I_SetVolume]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[])]
+
+Resume'SetVolume 1  
+
+1`[(Display,MValResponder,[S_CurrentVolume,S_CurrentSyringe]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseVTBI]),(DownMinusSK,ActionControl,[S_DecreaseVTBI]),(YesStartSK,ActionControl,[S_SetVTBI,I_SetDuration]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[I_Init,Quit]),(Timeout,System,[])]
+
+SetDuration'Info 1  
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+SetDuration'Init 1  
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+ 
+SetDuration'RateConfirm 1
+                         1`[(Display,MValResponder,[S_CurrentRate]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_ConfirmSettings,S_SaveSettings]),(NoStopSK,ActionControl,[I_SetDuration]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+SetDuration'SetDuration 1
+                         1`[(Display,MValResponder,[S_CurrentDuration]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseDuration]),(DownMinusSK,ActionControl,[S_DecreaseDuration]),(YesStartSK,ActionControl,[S_SetNewDuration,I_RateConfirm]),(NoStopSK,ActionControl,[I_SetVolume]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+SetDuration'SetVolume 1
+                         1`[(Display,MValResponder,[S_CurrentVolume,S_CurrentSyringe]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseVTBI]),(DownMinusSK,ActionControl,[S_DecreaseVTBI]),(YesStartSK,ActionControl,[S_SetVTBI,I_SetDuration]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[I_Init,Quit]),(Timeout,System,[])]
+
+SetVolume'Info 1    
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLo
+ck]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+SetVolume'Init 1    
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+SetVolume'SetDuration 1
+                         1`[(Display,MValResponder,[S_CurrentDuration]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseDuration]),(DownMinusSK,ActionControl,[S_DecreaseDuration]),(YesStartSK,ActionControl,[S_SetNewDuration,I_RateConfirm]),(NoStopSK,ActionControl,[I_SetVolume]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+SetVolume'SetVolume 1
+                         1`[(Display,MValResponder,[S_CurrentVolume,S_CurrentSyringe]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_IncreaseVTBI]),(DownMinusSK,ActionControl,[S_DecreaseVTBI]),(YesStartSK,ActionControl,[S_SetVTBI,I_SetDuration]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[I_Init,Quit]),(Timeout,System,[])]
+
+StartInfusingConfirm'ConfirmSettings 1
+                         1`[(Display,MValResponder,[S_CurrentVTBI,S_CurrentDuration,S_CurrentRate,S_ConfirmMsg]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_StartInfusingConfirm]),(NoStopSK,ActionControl,[I_RateConfirm]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+
+StartInfusingConfirm'Info 1
+                         1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+ 
+StartInfusingConfirm'Infusing 1
+                         1`[(Display,MValResponder,[S_TimeRemaining,S_CurrentRate,S_CurrentSyringe,S_DeliveringMsg]),(InfoSK,ActionControl,[I_InfusionStatus]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[]),(NoStopSK,ActionControl,[S_Pause,I_Paused]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+StartInfusingConfirm'Init 1
+                         1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+StartInfusingConfirm'StartInfusingConfirm 1
+                         1`[(Display,MValResponder,[S_StartInfusingMsg]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Infusing,S_Infusing]),(NoStopSK,ActionControl,[I_ConfirmSettings]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+ 
+TimeOut'Info 1      
+
+1`[(Display,MValResponder,[S_InfoList]),(InfoSK,ActionControl,[S_KeypadLock]),(UpPlusSK,ActionControl,[S_ScrollInfoListUp]),(DownMinusSK,ActionControl,[S_ScrollInfoListDown]),(YesStartSK,ActionControl,[I_BatteryLevel,I_Init,I_RateSet,I_EventLog,I_ChangeSetUp]),(NoStopSK,ActionControl,[I_Init]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit,I_Init]),(Timeout,System,[])]
+
+TimeOut'Init 1      
+
+1`[(Display,MValResponder,[S_SyringeDisplay]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[S_ScrollSyringeList]),(DownMinusSK,ActionControl,[S_ScrollSyringeList]),(YesStartSK,ActionControl,[I_SetVolume,S_SelectSyringe]),(NoStopSK,ActionControl,[]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[Quit]),(Timeout,System,[I_TimeOut])]
+
+TimeOut'TimeOut 1   
+
+1`[(Display,MValResponder,[S_TimeOut]),(InfoSK,ActionControl,[I_Info]),(UpPlusSK,ActionControl,[]),(DownMinusSK,ActionControl,[]),(YesStartSK,ActionControl,[I_Init]),(NoStopSK,ActionControl,[S_StopAlarm]),(LeftFFSK,ActionControl,[]),(RightBackSK,ActionControl,[]),(OnOffButton,ActionControl,[]),(Timeout,System,[])]
+
+
+  Best Lower Multi-set Bounds
+  
+   BatteryLevel'BatteryLevel 1
+                         empty
+     BatteryLevel'Info 1 empty
+     BatteryLevel'Init 1 empty
+     BatteryStatus'BatteryStatus 1
+                         empty
+     BatteryStatus'Infusing 1
+                         empty
+     BatteryStatus'Paused 1
+                         empty
+     ChangeSetUp'ChangeSetUp 1
+                         empty
+     ChangeSetUp'Info 1  empty
+     ChangeSetUp'Init 1  empty
+     ConfirmSettings'ConfirmSettings 1
+                         empty
+     ConfirmSettings'Info 1
+                         empty
+     ConfirmSettings'Init 1
+                         empty
+     ConfirmSettings'RateConfirm 1
+                         empty
+     ConfirmSettings'StartInfusingConfirm 1
+                         empty
+     EventLog'EventLog 1 empty
+     EventLog'Info 1     empty
+     EventLog'Init 1     empty
+     Info'BatteryLevel 1 empty
+     Info'ChangeSetUp 1  empty
+     Info'EventLog 1     empty
+     Info'Info 1         empty
+     Info'Init 1         empty
+     Info'RateSet 1      empty
+     Infusing'Infusing 1 empty
+     Infusing'InfusionStatus 1
+                         empty
+     Infusing'Paused 1   empty
+     InfusionStatus'BatteryStatus 1
+                         empty
+     InfusionStatus'Infusing 1
+                         empty
+     InfusionStatus'InfusionStatus 1
+                         empty
+     InfusionStatus'Paused 1
+                         empty
+     Init'Info 1         empty
+     Init'Init 1         empty
+     Init'SetVolume 1    empty
+     Init'TimeOut 1      empty
+     Init2'Info 1        empty
+     Init2'Init2 1       empty
+     Init2'Resume 1      empty
+     LoadSyringe'Info 1  empty
+     LoadSyringe'Init 1  empty
+     LoadSyringe'LoadSyringe 1
+                         empty
+     Paused'Info 1       empty
+     Paused'Infusing 1   empty
+     Paused'Init2 1      empty
+     Paused'Paused 1     empty
+     RateConfirm'ConfirmSettings 1
+                         empty
+     RateConfirm'Info 1  empty
+     RateConfirm'Init 1  empty
+     RateConfirm'RateConfirm 1
+                         empty
+     RateConfirm'SetDuration 1
+                         empty
+     RateSet'Info 1      empty
+     RateSet'Init 1      empty
+     RateSet'RateSet 1   empty
+     Resume'Infusing 1   empty
+     Resume'Resume 1     empty
+     Resume'SetVolume 1  empty
+     SetDuration'Info 1  empty
+     SetDuration'Init 1  empty
+     SetDuration'RateConfirm 1
+                         empty
+     SetDuration'SetDuration 1
+                         empty
+     SetDuration'SetVolume 1
+                         empty
+     SetVolume'Info 1    empty
+     SetVolume'Init 1    empty
+     SetVolume'SetDuration 1
+                         empty
+     SetVolume'SetVolume 1
+                         empty
+     StartInfusingConfirm'ConfirmSettings 1
+                         empty
+     StartInfusingConfirm'Info 1
+                         empty
+     StartInfusingConfirm'Infusing 1
+                         empty
+     StartInfusingConfirm'Init 1
+                         empty
+     StartInfusingConfirm'StartInfusingConfirm 1
+                         empty
+     TimeOut'Info 1      empty
+     TimeOut'Init 1      empty
+     TimeOut'TimeOut 1   empty
+
+
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     18 [3,9,2,5,10,...]
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     None
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     BatteryLevel'I_Info 1
+     BatteryLevel'I_Init 1
+     BatteryStatus'I_Infusing 1
+     BatteryStatus'I_Paused 1
+     ChangeSetUp'I_Info 1
+     ChangeSetUp'I_Init 1
+     ConfirmSettings'I_Info 1
+     ConfirmSettings'I_Init 1
+     ConfirmSettings'I_RateConfirm 1
+     ConfirmSettings'I_StartInfusingConfirm 1
+     EventLog'I_Info 1
+     EventLog'I_Init 1
+     Info'I_BatteryLevel 1
+     Info'I_ChangeSetUp 1
+     Info'I_EventLog 1
+     Info'I_Init 1
+     Info'I_RateSet 1
+     Infusing'I_InfusionStatus 1
+     Infusing'I_Paused 1
+     InfusionStatus'I_BatteryStatus 1
+     InfusionStatus'I_Infusing 1
+     InfusionStatus'I_Paused 1
+     Init'I_Info 1
+     Init'I_SetVolume 1
+     Init'I_TimeOut 1
+     Init2'I_Info 1
+     Init2'I_Resume 1
+     Paused'I_Info 1
+     Paused'I_Infusing 1
+     Paused'I_Init2 1
+     RateConfirm'I_ConfirmSettings 1
+     RateConfirm'I_Info 1
+     RateConfirm'I_Init 1
+     RateConfirm'I_SetDuration 1
+     RateSet'I_Info 1
+     RateSet'I_Init 1
+     Resume'I_Infusing 1
+     Resume'I_SetVolume 1
+     SetDuration'I_Info 1
+     SetDuration'I_Init 1
+     SetDuration'I_RateConfirm 1
+     SetDuration'I_SetVolume 1
+     SetVolume'I_Info 1
+     SetVolume'I_Init 1
+     SetVolume'I_SetDuration 1
+     StartInfusingConfirm'I_ConfirmSettings 1
+     StartInfusingConfirm'I_Info 1
+     StartInfusingConfirm'I_Infusing 1
+     StartInfusingConfirm'I_Init 1
+     TimeOut'I_Info 1
+     TimeOut'I_Init 1
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+
+  Impartial Transition Instances
+     None
+
+  Fair Transition Instances
+     LoadSyringe'I_Info 1
+     LoadSyringe'I_Init 1
+
+  Just Transition Instances
+     BatteryLevel'I_Info 1
+     BatteryLevel'I_Init 1
+     BatteryStatus'I_Infusing 1
+     BatteryStatus'I_Paused 1
+     ChangeSetUp'I_Info 1
+     ChangeSetUp'I_Init 1
+     ConfirmSettings'I_Info 1
+     ConfirmSettings'I_Init 1
+     ConfirmSettings'I_RateConfirm 1
+     ConfirmSettings'I_StartInfusingConfirm 1
+     EventLog'I_Info 1
+     EventLog'I_Init 1
+     Info'I_BatteryLevel 1
+     Info'I_ChangeSetUp 1
+     Info'I_EventLog 1
+     Info'I_Init 1
+     Info'I_RateSet 1
+     Infusing'I_InfusionStatus 1
+     Infusing'I_Paused 1
+     InfusionStatus'I_BatteryStatus 1
+     InfusionStatus'I_Infusing 1
+     InfusionStatus'I_Paused 1
+     Init'I_Info 1
+     Init'I_SetVolume 1
+     Init'I_TimeOut 1
+     Init2'I_Info 1
+     Init2'I_Resume 1
+     Paused'I_Info 1
+     Paused'I_Infusing 1
+     Paused'I_Init2 1
+     RateConfirm'I_ConfirmSettings 1
+     RateConfirm'I_Info 1
+     RateConfirm'I_Init 1
+     RateConfirm'I_SetDuration 1
+     RateSet'I_Info 1
+     RateSet'I_Init 1
+     Resume'I_Infusing 1
+     Resume'I_SetVolume 1
+     SetDuration'I_Info 1
+     SetDuration'I_Init 1
+     SetDuration'I_RateConfirm 1
+     SetDuration'I_SetVolume 1
+     SetVolume'I_Info 1
+     SetVolume'I_Init 1
+     SetVolume'I_SetDuration 1
+     StartInfusingConfirm'I_ConfirmSettings 1
+     StartInfusingConfirm'I_Info 1
+     StartInfusingConfirm'I_Infusing 1
+     StartInfusingConfirm'I_Init 1
+     TimeOut'I_Info 1
+     TimeOut'I_Init 1
+
+  Transition Instances with No Fairness
+     None
+

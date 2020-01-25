@@ -1,0 +1,115 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/sj113/Desktop/timeinvariantt34.cpn
+Report generated: Sun Sep  8 13:16:47 2019
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  16663
+     Arcs:   46032
+     Secs:   5
+     Status: Full
+
+  Scc Graph
+     Nodes:  9
+     Arcs:   18
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     6 [5696,5651,5625,5338,5298,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+
+  Impartial Transition Instances
+     None
+
+  Fair Transition Instances
+     LoadSyringe'I_Info 1
+     LoadSyringe'I_Init 1
+
+  Just Transition Instances
+     BatteryLevel'I_Info 1
+     BatteryLevel'I_Init 1
+     BatteryStatus'I_Infusing 1
+     BatteryStatus'S_Pause_I_Paused 1
+     ChangeSetUp'I_Info 1
+     ChangeSetUp'I_Init 1
+     ConfirmSettings'I_Info 1
+     ConfirmSettings'I_Init 1
+     ConfirmSettings'I_RateConfirm 1
+     ConfirmSettings'I_StartInfusingConfirm 1
+     EventLog'I_Info 1
+     EventLog'I_Init 1
+     Info'I_BatteryLevel 1
+     Info'I_ChangeSetUp 1
+     Info'I_EventLog 1
+     Info'I_Init 1
+     Info'I_RateSet 1
+     Info'S_KeyPadLocked 1
+     Infusing'Exit 1
+     Infusing'I_InfusionStatus 1
+     Infusing'S_Pause_I_Paused 1
+     Infusing'S_tick 1
+     InfusionStatus'I_BatteryStatus 1
+     InfusionStatus'I_Infusing 1
+     InfusionStatus'S_Pause_I_Paused 1
+     Init'I_Info 1
+     Init'I_SetVolume 1
+     Init'I_TimeOut 1
+     Init2'I_Info 1
+     Init2'I_Resume 1
+     Paused'I_Info 1
+     Paused'I_Init2 1
+     Paused'S_ResumeInfusing_I_Infusing 1
+     RateConfirm'I_ConfirmSettings 1
+     RateConfirm'I_Info 1
+     RateConfirm'I_Init 1
+     RateConfirm'I_SetDuration 1
+     RateSet'I_Info 1
+     RateSet'I_Init 1
+     Resume'I_Infusing 1
+     Resume'I_SetVolume 1
+     SetDuration'S_IncreaseDuration 1
+     SetVolume'S_DecreaseVTBI 1
+     SetVolume'S_IncreaseVTBI 1
+     StartInfusingConfirm'I_ConfirmSettings 1
+     StartInfusingConfirm'I_Info 1
+     StartInfusingConfirm'I_Init 1
+     StartInfusingConfirm'S_Infusing_I_Infusing 1
+     TimeOut'I_Info 1
+     TimeOut'I_Init 1
+
+  Transition Instances with No Fairness
+     SetDuration'I_Info 1
+     SetDuration'I_Init 1
+     SetDuration'I_SetVolume 1
+     SetDuration'S_DecreaseDuration 1
+     SetDuration'S_SetNewDuration_I_RateConfirm 1
+     SetVolume'I_Info 1
+     SetVolume'I_Init 1
+     SetVolume'S_SetVTBI_I_SetDuration 1
